@@ -1,0 +1,104 @@
+/* Desktop */
+@media (max-width: 1510px) {
+    body {
+        /* background-color: brown; */
+    }
+
+    .mainContainerHeader {
+        width: 70%;
+    }
+}
+
+
+
+@media (min-width: 769px) and (max-width: 1190px) {
+    body {
+        /* background-color: blue; */
+    }
+
+    .mainContainerHeader {
+        width: 75%;
+    }
+
+    .paragraphDeConversao {
+        width: 40%;
+        font-weight: 500;
+        font-size: 16px;
+    }
+}
+
+
+
+@media (max-width: 900px) {
+    body {
+        /* background-color: rgb(255, 0, 191); */
+    }
+
+    .containerDosCalculos {
+        flex-direction: column;
+        height: 550px;
+    }
+
+    .mainContainerHeader {
+        width: 80%;
+    }
+
+    .titleMain {
+        width: 90%;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+
+    svg {
+        width: 20px;
+    }
+
+    .containerConversao {
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 30px;
+    }
+
+    button {
+        width: 15%;
+    }
+
+    .containerResultado {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 30px;
+    }
+
+    .paragraphDeResultado {
+        width: 59%;
+        color: white;
+        font-weight: 500;
+        font-size: 15px;
+    }
+
+    .paragraphDeConversao {
+        width: 50%;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    select {
+        width: 50%;
+    }
+
+    .valorDigitadoConversao {
+        padding: 1px;
+        width: 90%;
+    }
+
+    .cifraoConversao {
+        width: 13%;
+        font-size: 20px;
+        font-weight: 200;
+    }
+
+    .cifraoConversaoResultado {
+        width: 13%;
+        font-size: 20px;
+        font-weight: 200;
+    }
+
+}
