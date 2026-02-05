@@ -4,10 +4,10 @@
 
 */
 
-// Pegando o bottão
+// Mapeando meu bottão
 const myButton = document.querySelector('button')
 
-
+// Vai executar essa função quando o botão for clicado
 function sortearNumero() {
 
     // Pegando os valores Digitados
@@ -32,9 +32,10 @@ function sortearNumero() {
     valorSorteadoExibido.innerHTML = numberRandom
 
         // Verifica se a valor no input
-    if (inputMin == 0 || inputMax == 0) {
+    if (inputMin == "" || inputMax == "") {
 
-        alert('Você tem que estipular algum valor.')
+        alert('Você tem que estipular um valor MÍNIMO e um valor MÁXIMO!')
+
         // limpa a tela
         textoDoResultado.style.display = 'none'
         valorSorteadoExibido.style.display = 'none'
@@ -45,5 +46,5 @@ function sortearNumero() {
 
 }
 
-// Colocando um evento quanto o botão for clicado, chama a função
+// Colocando um evento quanto o botão for clicado, chama a função.
 myButton.addEventListener('click', sortearNumero)
