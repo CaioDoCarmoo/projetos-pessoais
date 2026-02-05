@@ -19,7 +19,7 @@ function sortearNumero() {
     const textoDoResultado = document.querySelector('.textoNumeroSorteado')
     textoDoResultado.style.display = 'block'
 
-        //Texto 'clique em sortear'
+    //Texto 'clique em sortear'
     const textoPlaceholder = document.querySelector('.textoFlutuante')
     textoPlaceholder.style.display = 'none'
 
@@ -31,7 +31,7 @@ function sortearNumero() {
     valorSorteadoExibido.style.display = 'block'
     valorSorteadoExibido.innerHTML = numberRandom
 
-        // Verifica se a valor no input
+    // Verifica se a valor no input
     if (inputMin == "" || inputMax == "") {
 
         alert('Você tem que estipular um valor MÍNIMO e um valor MÁXIMO!')
