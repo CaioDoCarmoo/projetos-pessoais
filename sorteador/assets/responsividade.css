@@ -1,0 +1,26 @@
+
+@media (max-width: 780px) {
+
+    main {
+    width: 80%;
+}
+
+.containerInputs {
+    padding: 15px;
+   
+}
+
+.textMin, .textMax {
+    font-size: 12px;
+}
+
+input[type=number] {
+    background-color: #f3f3f5;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+}

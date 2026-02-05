@@ -107,6 +107,7 @@ input:focus {
     border: none;
     background-color: #b1bfa3;
     color: white;
+    box-shadow: 0px 2px 10px #b1bfa3;
 
     display: flex;
     flex-direction: row;
