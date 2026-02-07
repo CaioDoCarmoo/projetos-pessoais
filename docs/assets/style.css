@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+
+body {
+    background-color: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100vh;
+}
+
+header {
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+h2 {
+    font-weight: 500;
+}
+
+main {
+    /* background-color: blueviolet; */
+    width: 45%;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cardsProjetos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid #c5c5c591;
+
+    transform: scale(1);
+    transition: border 0.10s ease, transform 0.9s ease;
+
+    position: relative;
+}
+
+.cardsProjetos:hover {
+    border: 1px solid #00000091;
+    transform: scale(1.05);
+}
+
+.titleProjetos {
+    width: 90%;
+}
+
+svg {
+    position: absolute;
+    right: 30px;
+    bottom: 70px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}

@@ -83,7 +83,6 @@ function converterValores() {
 
         valorExibidoNaTela.innerHTML = new Intl.NumberFormat("pt-BR", { currency: "BRL" })
             .format(numeroFormatadoParaCalculo * dolarToday)
-            
 
         cifraoValorEntrada.innerHTML = 'USD'
         cifraoValorSaida.innerHTML = 'R$'
