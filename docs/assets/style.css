@@ -42,6 +42,12 @@ section {
     gap: 20px;
 }
 
+.cardLink {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
 .cardsProjetos {
     display: flex;
     flex-direction: column;
