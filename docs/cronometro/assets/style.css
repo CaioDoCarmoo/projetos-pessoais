@@ -9,7 +9,7 @@
 
 body {
     background: #E33FB1;
-    background: radial-gradient(circle, rgba(227, 63, 177, 2) 0%, rgba(77, 29, 121, 1) 23%, rgba(56, 30, 96, 1) 64%, rgba(23, 25, 53, 1) 100%);
+    background: radial-gradient(circle, rgba(77, 29, 121, 1) 23%, rgba(56, 30, 96, 1) 64%, rgba(23, 25, 53, 1) 100%);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,7 +27,8 @@ main {
     height: 40vh;
     width: 40vh;
     border-radius: 50%;
-    box-shadow: 0 0 30px rgba(255, 100, 255, 0.2);;
+    box-shadow: 0 0 70px rgba(227, 63, 177, 2);
+    /* rgba(255, 100, 255, 0.2) */
 }
 
 .containerMinutos {
@@ -51,13 +52,16 @@ h1 {
     width: 100%;
 
     background: linear-gradient(90deg, #ff5acd, #8a7cff, #4fd1ff);
-    -webkit-background-clip: text;  /* O fundo (background) só deve aparecer onde tem texto */
-    -webkit-text-fill-color: transparent; /* A cor do texto é transparente */
+    -webkit-background-clip: text;
+    /* O fundo (background) só deve aparecer onde tem texto */
+    -webkit-text-fill-color: transparent;
+    /* A cor do texto é transparente */
 
     text-shadow: 0 0 30px rgba(255, 100, 255, 0.2);
 }
 
-.minutos, .segundos {
+.minutos,
+.segundos {
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 400;
@@ -85,3 +89,68 @@ h1 {
     width: 100%;
 }
 
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    position: relative;
+}
+
+svg {
+    width: 65%;
+}
+
+button {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: none;
+
+    transition: transform 0.6s ease;
+}
+
+button:hover {
+    transform: scale(1.12);
+    cursor: pointer;
+}
+
+.playPause {
+    background: #B848F6;
+    background: linear-gradient(90deg, rgba(184, 72, 246, 1) 0%, rgba(200, 73, 222, 1) 50%, rgba(231, 60, 169, 1) 100%);
+    box-shadow: 0 0 30px rgba(255, 100, 255, 0.623);
+}
+
+.restart {
+    background: #2286FD;
+    background: linear-gradient(90deg, rgba(34, 134, 253, 1) 0%, rgba(13, 147, 248, 1) 50%, rgba(0, 180, 221, 1) 100%);
+    box-shadow: 0 0 30px rgba(34, 134, 253, 1);
+}
+
+.pause {
+    color: #fafafa81;
+    padding-top: 20px;
+    width: 100%;
+}
+
+
+.dot {
+
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #7c3aed;
+    /* background-color: greenyellow; */
+
+    box-shadow:
+        0 0 6px #7c3aed,
+        0 0 12px rgba(124, 58, 237, 0.8),
+        0 0 20px rgba(124, 58, 237, 0.6);
+
+    position: absolute;
+    bottom: 5px;
+    left: 90px;
+}
