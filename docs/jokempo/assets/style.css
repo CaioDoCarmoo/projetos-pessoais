@@ -75,6 +75,10 @@ hr {
   margin-right: -40px;
 }
 
+.result {
+    text-align: center;
+}
+
 .containerPoints {
     display: flex;
     flex-direction: row;

@@ -12,14 +12,15 @@
     <main>
         <h1>Jokempô</h1>
         <div class="buttons">
-            <button>&#x1F44A;</button>
-            <button>&#x270B;</button>
-            <button>&#x270C;</button>
+            <button id="rock" onclick="playHuman('Rock')">&#x1F44A;</button>
+            <button id="paper" onclick="playHuman('Paper')">&#x270B;</button>
+            <button id="scissors" onclick="playHuman('Scissors')">&#x270C;</button>
         </div>
         <hr>
+        <p class="result"></p>
         <div class="containerPoints">
             <div class="points">
-                <p class="textPoint">Sua pontuação</p>
+                <p class="textPoint">Sua pontuação</p>  
                 <p class="pointUser">0</p>
             </div>
             <p>x</p>
